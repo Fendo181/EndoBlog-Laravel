@@ -17,3 +17,10 @@ Official documentation [is located here](http://laravel.com/docs/homestead).
   - 公開:http://e181.main.jp/works/laravel/public/
   - Top画面の細かい修正
   - Abou画面,AboutMe画面,Souceリンク,[簡易掲示板リンクの追加](https://github.com/Fendo181/Laravel_repos/blob/master/Code/Laravel/public/Dot/index.php)
+  
+##今後加える機能と修正
+- abouページの修正
+- aboutmeページの修正
+- 簡易掲示板の投稿文字制限
+- Slack機能通知の追加
+- 画像投稿機能の追加
