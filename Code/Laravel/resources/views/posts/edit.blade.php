@@ -33,7 +33,7 @@ Edit Blog!
             
             <p1>What do today?</p1>
             <p>
-                <textarea name="body" placeholder="body">{{ old('body', $post->body) }}</textarea>
+                <textarea name="body" placeholder="body" cols="40" rows="40">{{ old('body', $post->body) }}</textarea>
                 @if ($errors->has('body'))
                 <span class="error">{{ $errors->first('body') }}</span>
                 @endif

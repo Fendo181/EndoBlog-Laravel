@@ -31,7 +31,7 @@ Add New!
 
             <p1>What do today?</p1>
             <p>
-                <textarea name="body" placeholder="body"></textarea>
+                <textarea name="body" placeholder="本文を入力してください" cols="40" rows="40"></textarea>
                 @if ($errors->has('body'))
                 <span class="error">{{ $errors->first('body') }}</span>
                 @endif
