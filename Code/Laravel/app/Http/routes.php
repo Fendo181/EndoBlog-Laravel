@@ -20,32 +20,52 @@ Route::get('/', function () {
 
 //webルーティング 下が優先される!
 
-Route::group(['middleware' => ['web']],function(){
-       /* //いつもの
-        Route::get('/',function(){
-            return "welcome!!Laravel!";
-             //return view('welcome');
-            
-        });
-        */
+//Route::group(['middleware' => ['web']],function(){
+  
         //phponfo
         Route::get('/php',function(){
             return phpinfo();
         });
-        /*
-        Route::get('/{name}',function($name){
-            return 'hello!'.$name;
-        });
-        */
+
+        /*## 遠藤カレンダーの設定  ## */
+
+        /*DBの中身を表示 */
+        Route::get('/calendar/note','CalendarController@note');
+        /* カレンダー中身 */
+        Route::get('/calendar','CalendarController@index');
         
-        //Post画面(仮)
-        /*
-        Route::get('/posts',function(){
-            return view('posts.index');
-        });
-        */
         
-        /* End blogのrouteing 設定*/
+        /* todo * ※{id}よりも前に記述する。*/
+        /* 予定を記述する範囲 */
+        route::get('/calendar/todo','calendarcontroller@todo');
+
+        /*create ※{id}よりも前に記述する。*/
+        Route::get('/calendar/create','CalendarController@create');
+        
+        /* show */
+        Route::get('/calendar/{id}','CalendarController@show');
+
+        /* edit */
+        Route::get('/calendar/{id}/edit','CalendarController@edit');
+        
+        /* store */
+        Route::post('/calendar','CalendarController@store');
+
+        /* update */
+        Route::patch('/calendar/{id}','CalendarController@update');
+
+        /*  delete */
+        Route::delete('/calendar/{id}','CalendarController@destroy');
+
+   
+
+        
+
+
+        
+        
+        /*## End blogのrouteing 設定  ##*/
+
         //URL(localhost/)画面にアクセスしたら、にgetでPostsContollerのindexメソッドを呼び出す
         Route::get('/','PostsController@index');
         //URL(localhost/about)にアクセスしたら,getでPostcontorollerにaboutメソッドを呼び出す。
@@ -64,4 +84,5 @@ Route::group(['middleware' => ['web']],function(){
         Route::delete('/posts/{id}','PostsController@destroy');
         //URL(localhost/posts/にアクセスしたら、postsでPostsContollerのstoreメソッドを呼び出す)
         Route::post('/posts','PostsController@store');
-    });
+    
+//});

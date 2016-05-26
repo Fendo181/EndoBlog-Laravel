@@ -24,6 +24,9 @@ Official documentation [is located here](http://laravel.com/docs/homestead).
   - [Qiitaに環境構築と公開までの方法を記載](http://qiita.com/Fendo181/items/a6b9017f6ef490995aba)
 - 2016 4 30
   - 諸事情により現在サーバ停止中。
+
+- 2016 5 26
+  - [EndoBlog公開](http://endo181.main.jp/works/laravel/public/)
   
 ##今後加える機能と修正
 - abouページの修正
