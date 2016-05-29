@@ -79,3 +79,52 @@ text-decoration: none;
 a:hover {
 text-decoration: underline;
 }
+
+
+/*calendar stylesheet*/
+
+.calendar {
+    text-align: center;
+}
+
+
+div.calendar a{
+    text-decoration: none;
+}
+
+div.calendar table{
+    margin:15px auto;
+    border: 1px solid #ddd;
+    /*セルのボーダーの表示の仕方を指定する*/
+    border-collapse:collapse;
+}
+
+div.calendar th{
+    background:#eee;
+}
+
+div.calendar th,td{
+    padding: 7px;
+    text-align:center;
+}
+
+.youbi_6{
+    color: blue;
+}
+
+/* 日曜日の色付け*/
+.youbi_0{
+    color: red;
+}
+
+.today{
+    font-weight: bold;
+    color:#3762b3;
+}
+
+.gray{
+    color:#dedede;
+}
+
+
+

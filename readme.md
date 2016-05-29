@@ -27,10 +27,14 @@ Official documentation [is located here](http://laravel.com/docs/homestead).
 
 - 2016 5 26
   - [EndoBlog公開](http://endo181.main.jp/works/laravel/public/)
+
+- 2016 5 29
+  - calendar昨日を移植。
+    - ※カレンダーを表示するだけであって、Todo機能はなし。
   
 ##今後加える機能と修正
-- abouページの修正
-- aboutmeページの修正
-- 簡易掲示板の投稿文字制限
+- ~~abouページの修正~~
+- ~~aboutmeページの修正~~
+- ~~簡易掲示板の投稿文字制限~~
 - Slack機能通知の追加
 - 画像投稿機能の追加

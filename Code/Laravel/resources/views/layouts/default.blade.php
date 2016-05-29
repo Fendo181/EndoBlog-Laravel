@@ -25,20 +25,17 @@
         @yield('img1')
     </div>
     
-    {{-- about ページ --}}
-    <div>
+    {{-- リンク ページ --}}
     <div class="container">
         @yield('about')@yield('aboutme')@yield('git')@yield('Dot')
     </div>
+    
+    {{-- Endo Calendar --}}
+    <div class="calendar">
+        @yield("calendar")
     </div>
-   
     
-    <!-- flash message -->
-    
-    <!-- Session を使う
-    @if (Session::has('flash_message')) 
-    <div class="alert alert-success">{{ Session::get('flash_message')}}</div>
-    @endif -->
+
     
     @if (session('flash_message'))
       <div class="flash_message" onclick="this.classList.add('hidden')">{{ session('flash_message') }}</div>
