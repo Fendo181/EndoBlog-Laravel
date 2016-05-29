@@ -30,7 +30,7 @@ Official documentation [is located here](http://laravel.com/docs/homestead).
 
 - 2016 5 29
   - calendar昨日を移植。
-    - ※カレンダーを表示するだけであって、Todo機能はなし。
+    - ※カレンダ-を表示するだけであって、Todo機能は現在なし。
   
 ##今後加える機能と修正
 - ~~abouページの修正~~
