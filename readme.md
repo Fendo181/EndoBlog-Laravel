@@ -31,6 +31,10 @@ Official documentation [is located here](http://laravel.com/docs/homestead).
 - 2016 5 29
   - calendar昨日を移植。
     - ※カレンダ-を表示するだけであって、Todo機能は現在なし。
+
+- 2016 6 13
+  - 諸事情により現在サーバ停止中(2回目)
+
   
 ##今後加える機能と修正
 - ~~abouページの修正~~

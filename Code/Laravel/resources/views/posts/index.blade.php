@@ -54,7 +54,7 @@ function h($s){
             </tbody>
             <tfoot>
                 <tr>
-                    <th class="today" colspan="7"><a href="/">Today</a></th>
+                    <th class="today" colspan="7"><a href="/">Today(<?php echo date("Y年m月d日"); ?>)</a></th>
                 </tr>
                 <tr>
                     <th colspan="7">見たいカレンダーの年月を選択してください。</th>
@@ -74,8 +74,10 @@ function h($s){
 
 
 @section('content')
-        Start Your Bolg Now!　→
+        <span class="pen_marker">
+        Start Your EndoBolg Now!　→
         <a href="{{ url('/posts/create') }}" class="fs12">[Add new Blog]</a>
+        </span>
         <h2>
         <ul>
         @forelse ($posts as $post)

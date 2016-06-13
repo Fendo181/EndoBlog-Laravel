@@ -5,6 +5,10 @@ body{
     font-family:cursive,sans-serif;
 }
 
+.pen_marker{
+     background: linear-gradient(transparent 60%, #ff0 0%);
+}
+
 
 .container{
     width: 760px;
